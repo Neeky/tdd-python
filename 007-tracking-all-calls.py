@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#! -*- encoding: utf8 -*-
 
 import unittest
 from unittest.mock import MagicMock, call
@@ -16,6 +17,9 @@ class TestFoo(unittest.TestCase):
 
         c, cc = mm.mock_calls  # [call.hello(), call.attr.world()]
         self.assertEqual(c, call.hello())
+
+        expected = [call.hello(), call.attr.world()]
+        self.assertEqual(mm.mock_calls, expected)
 
 
 if __name__ == "__main__":
