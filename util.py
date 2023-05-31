@@ -10,3 +10,13 @@ class Foo(object):
 
 def bar():
     return "bar"
+
+
+def read_hosts():
+    """ """
+    res = []
+    with open("/etc/hosts") as h_file:
+        for line in h_file:
+            res.append(res)
+
+    return res
