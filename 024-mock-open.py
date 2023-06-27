@@ -21,9 +21,6 @@ class OpenTestCase(unittest.TestCase):
 
         mock.assert_called_with("/tmp/xxx")
 
-        pass
-
 
 if __name__ == "__main__":
-    # read_hosts()
     unittest.main()
